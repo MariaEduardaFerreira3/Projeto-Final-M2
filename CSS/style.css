@@ -1,12 +1,8 @@
-*{  font-family: "Inknut Antiqua", serif;
-}
-
-.menu{
-    background-color: #b7d0ae;
-    display: flex;
-    justify-content: space-evenly;
-    height: 50px;
-
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inknut Antiqua", serif;
 }
 
 nav{
@@ -16,7 +12,14 @@ nav{
     color: aliceblue;
     font-size: larger;
     align-items: center;
-    
+}
+
+.menu{
+    background-color: #b7d0ae;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
 }
 
 img{
@@ -33,7 +36,7 @@ img{
     margin-top: 5px;
     width: 20%;
     text-align: center;
-
+    cursor: pointer;
 }
 
 footer{
@@ -41,7 +44,6 @@ footer{
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px
-
 }
 
 .button{
@@ -53,15 +55,68 @@ footer{
     width: 100px;
     text-align: center;    
     border:none;
-
+    cursor: pointer;
 }
+button:hover{
+    color:#0c2305;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgb(1, 53, 9);;
+}
+.persons{
+    display:flex;
+}
+
+section.persons{
+    padding: 80px 4%;
+    justify-content:space-between;
+}
+
+section.persons .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.ImgInspirations{
+    width: 360px;
+    height: 460px;
+    background-position: cover;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    justify-content:space-between;
+}
+
+.ImgInspirations:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b8;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+
 
 .pages:hover{
     color:#0c2305;
     transform: scale(1.05);
+    box-shadow: 0px 0px 8px rgb(1, 53, 9);
 }
 
-button:hover{
-    color:#0c2305;
-    transform: scale(1.05);
-}
