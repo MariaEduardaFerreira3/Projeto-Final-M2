@@ -1,0 +1,67 @@
+*{  font-family: "Inknut Antiqua", serif;
+}
+
+.menu{
+    background-color: #b7d0ae;
+    display: flex;
+    justify-content: space-evenly;
+    height: 50px;
+
+}
+
+nav{
+    background-color: #5f8b50;
+    display: flex;
+    justify-content: space-evenly;
+    color: aliceblue;
+    font-size: larger;
+    align-items: center;
+    
+}
+
+img{
+    width: 98px;
+    height: 100px;
+}
+
+.pages{
+    background-color: #5f8b50;
+    border-radius: 10px;
+    text-decoration-line: none;
+    color: aliceblue;
+    height: 40px;
+    margin-top: 5px;
+    width: 20%;
+    text-align: center;
+
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px
+
+}
+
+.button{
+    background-color: #5f8b50;
+    border-radius: 10px;
+    text-decoration-line: none;
+    color: aliceblue;
+    height: 40px;
+    width: 100px;
+    text-align: center;    
+    border:none;
+
+}
+
+.pages:hover{
+    color:#0c2305;
+    transform: scale(1.05);
+}
+
+button:hover{
+    color:#0c2305;
+    transform: scale(1.05);
+}
