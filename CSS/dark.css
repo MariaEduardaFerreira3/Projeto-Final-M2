@@ -5,6 +5,10 @@
     font-family: "Inknut Antiqua", serif;
 }
 
+body{
+    background-color: rgb(28, 27, 27);
+}
+
 nav{
     background-color: #234260;
     display: flex;
