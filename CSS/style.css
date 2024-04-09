@@ -62,6 +62,12 @@ footer{
     box-shadow: 0px 0px 8px rgb(1, 53, 9);;
 }
 
+#title{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
 .introduction{
     display: flex;
     background-color: #b7d0ae;
@@ -74,15 +80,13 @@ footer{
     border-radius: 2%;
 }
 section.persons{   
-    padding: 80px 4%;
-    margin-top: 60px;
+    padding: 50px;
   
 }
 .cards{
     display: flex;
     background-color: #b7d0ae;
     justify-content: center;
-    margin-bottom: %;
     margin-top: 3%;
     margin-right: 3%;
     padding: 3%;
