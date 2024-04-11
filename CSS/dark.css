@@ -4,11 +4,9 @@
     box-sizing: border-box;
     font-family: "Inknut Antiqua", serif;
 }
-
 body{
-    background-color: rgb(28, 27, 27);
+    background-color: black;
 }
-
 nav{
     background-color: #234260;
     display: flex;
@@ -44,7 +42,6 @@ footer{
     justify-content: space-between;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 .button{
     background-color: #234260;
@@ -71,15 +68,12 @@ footer{
   cursor:pointer ;
     border: none;
 }
-
-
 .title{
     display: flex;
     justify-content: center;
     margin-top: 5%;
     color: #fff;
 }
-
 .introduction{
     display: flex;
     background-color: #ccdcec;
@@ -91,9 +85,19 @@ footer{
     padding: 3%;
     border-radius: 2%;
 }
+.forecast{
+  display: flex;
+  background-color: #ccdcec;
+  justify-content: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  padding: 3%;
+  border-radius: 2%;
+}
 section.persons{   
     padding: 50px;
-  
 }
 .cards{
     display: flex;
@@ -106,12 +110,10 @@ section.persons{
     width: 100%;
     height: 500px;
 }
-
 .text{
     align-items: center;
     margin-left: 3%;
     margin-top: 12%;
-
 }
 .ImgInspirations{
     width: 360px;
@@ -154,7 +156,6 @@ section.persons{
 .list{
     text-decoration: none;
 }
-
 .petitions{
     display: flex;
     flex-direction: column;
@@ -167,7 +168,6 @@ section.persons{
     padding: 3%;
     border-radius: 2%;
 }
-
 .climate{
     display: flex;
     flex-direction: column;
@@ -180,7 +180,6 @@ section.persons{
     padding: 3%;
     border-radius: 2%;
 }
-
 .information{
     display: flex;
     flex-direction: column;
@@ -193,7 +192,6 @@ section.persons{
     padding: 3%;
     border-radius: 2%;
 }
-
 @media (max-width: 1200px) {
     .pages{
         width: auto;
@@ -210,19 +208,13 @@ section.persons{
         display: flex;
         flex-direction: column;
         height: 600px;
-
     }
-
     .ImgInspirations{
         display: flex;
         flex-direction: column;
         height: 600px;
     }
-
-
-
 }
-
 li {
     list-style-type: none;
   }
@@ -236,27 +228,21 @@ li {
     overflow: hidden;
     margin-left: 15%;
     margin-right: 15%;
-
   }
-
   .slides {
     height: 100%;
     width: 100%;
   }
-
   .slide {
     width: 100%;
     height: 100%;
     animation-name: fade;
     animation-duration: 1.2s;
-
     display: none;
   }
-
   .slide[data-active] {
     display: block;
   }
-
   .slide img {
     margin-left: 5%;
     width: 1000px;
@@ -264,7 +250,6 @@ li {
     object-fit: cover;
     object-position: center;
   }
-
   .previous-button,
   .next-button {
     margin-left: 5%;
@@ -273,38 +258,31 @@ li {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-
     width: 56px;
     height: 75px;
     font-size: 32px;
     font-weight: bold;
-
     color: #fff;
     border: 10px;;
   }
-
   .previous-button {
     left: 0;
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
   }
-
   .next-button {
     right: 0;
     border-top-left-radius: 6px;
     border-bottom-left-radius: 6px;
   }
-
   .previous-button:hover,
   .next-button:hover {
     background-color: rgba(0, 0, 0, 0.4);
   }
-
   .fade {
     animation-name: fade;
     animation-duration: 1.2s;
   }
-
   @keyframes fade {
     from {
       opacity: 0.8;
@@ -313,4 +291,123 @@ li {
     to {
       opacity: 1;
     }
+  }
+  .weatherbox{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+  }
+  .hide {
+    display: none !important;
+  }
+  .container {
+    text-align: center;
+    align-items: center;
+    background-color: #ccdcec;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    color: #fdfdfd;
+    border-radius: 1rem;
+    max-width: 400px;
+  }
+  .form h3 {
+    margin-bottom: 1rem;
+  }
+  .form-input-container {
+    display: flex;
+  }
+  .form input {
+    padding: 0.8rem;
+    border: none;
+    flex: 1;
+    border-radius: 4px;
+  }
+  .form button {
+    padding: 0.8rem;
+    min-width: 50px;
+    margin-left: 8px;
+    background-color: #8dd0f5;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  #weather-data,
+  #error-message,
+  #loader,
+  #suggestions {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+  }
+  #weather-data h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.6rem;
+  }
+  #weather-data h2 i {
+    font-size: 1rem;
+  }
+  #weather-data span {
+    margin: 0.6rem;
+  }
+  #temperature {
+    font-size: 4rem;
+  }
+  #country {
+    height: 15px;
+  }
+  #description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.6rem 0;
+  }
+  #description {
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  #details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #details-container #umidity {
+    border-right: 1px solid #fff;
+    margin: 0.6rem;
+    padding: 0.6rem;
+  }
+  #loader i {
+    animation: rotate 1.5s linear infinite;
+  }
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  #suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #suggestions button {
+    min-width: 150px;
+    margin: 0.8rem;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10rem;
+    border: none;
+    background-color: #8dd0f5;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    opacity: 0.8;
+    transition: 0.4s;
+  }
+  #suggestions button:hover {
+    opacity: 1;
   }
